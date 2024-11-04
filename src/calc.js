@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-function App() {
+function Calculator() {
   const [value, setValue] = useState('');
 
   return (
@@ -44,4 +44,4 @@ function App() {
   );
 }
 
-export default App;
+export default Calculator;
