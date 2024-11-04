@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
-// import "./App.css";
+import "./digiclock.css";
 
-function digiclock() {
+function DigiClock() {
   const [time, updateTime] = useState(new Date());
+
   useEffect(() => {
     // timer updation logic
     const timer = setInterval(() => {
@@ -10,6 +11,7 @@ function digiclock() {
     }, 1000);
     return () => clearInterval(timer);
   }, []);
+
   return (
     <div className="App">
       <div className="elementcontainer">
@@ -25,4 +27,4 @@ function digiclock() {
   );
 }
 
-export default digiclock;
+export default DigiClock;
